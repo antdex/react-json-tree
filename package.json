@@ -8,10 +8,10 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel example/index.html --open",
-    "build:demo": "parcel build example/index.html",
+    "build:demo": "parcel build example/index.html --public-url /react-json-tree/ --no-source-maps",
     "build": "NODE_ENV=production babel src --out-dir lib --extensions '.ts,.tsx'",
     "prepublishOnly": "yarn build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "yarn build:demo && gh-pages -d dist",
     "type-check": "tsc"
   },
   "peerDependencies": {
@@ -28,7 +28,7 @@
     "@types/react-dom": "^16.0.7",
     "antd": "^3.9.2",
     "gh-pages": "^2.0.0",
-    "parcel-bundler": "^1.9.7",
+    "parcel-bundler": "^1.10.0",
     "prettier": "^1.14.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
