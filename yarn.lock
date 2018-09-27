@@ -652,10 +652,6 @@
   dependencies:
     commander "*"
 
-"@types/estree@0.0.39":
-  version "0.0.39"
-  resolved "http://registry.npm.taobao.org/@types/estree/download/@types/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
-
 "@types/lodash@^4.14.116":
   version "4.14.116"
   resolved "http://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.116.tgz#5ccf215653e3e8c786a58390751033a9adca0eb9"
@@ -4550,13 +4546,6 @@ rmc-feedback@^2.0.0:
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
-
-rollup@^0.66.2:
-  version "0.66.2"
-  resolved "http://registry.npm.taobao.org/rollup/download/rollup-0.66.2.tgz#77acdb9f4093f5f035ce75480577c40a81ea7999"
-  dependencies:
-    "@types/estree" "0.0.39"
-    "@types/node" "*"
 
 safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@^5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"

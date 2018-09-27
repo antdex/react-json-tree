@@ -32,7 +32,6 @@
     "prettier": "^1.14.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "rollup": "^0.66.2",
     "typescript": "^3.0.3",
     "utility-types": "^2.1.0"
   },
