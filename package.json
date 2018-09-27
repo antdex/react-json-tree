@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "lib/index.js",
   "typing": "lib/index.d.ts",
-  "repository": "git@github.com:newraina/react-json-tree.git",
+  "repository": "git@github.com:antdex/react-json-tree.git",
   "author": "newraina <newraina@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
