@@ -388,4 +388,4 @@ var e=require("process");Object.defineProperty(exports,"__esModule",{value:!0}),
 },{"./json-tree":"fcOf"}],"zo2T":[function(require,module,exports) {
 "use strict";require("antd/dist/antd.css");var e=l(require("react")),r=require("react-dom"),t=n(require("../src"));function n(e){return e&&e.__esModule?e:{default:e}}function l(e){if(e&&e.__esModule)return e;var r={};if(null!=e)for(var t in e)if(Object.prototype.hasOwnProperty.call(e,t)){var n=Object.defineProperty&&Object.getOwnPropertyDescriptor?Object.getOwnPropertyDescriptor(e,t):{};n.get||n.set?Object.defineProperty(r,t,n):r[t]=e[t]}return r.default=e,r}var c={array:[11111,2,3],boolean:!0,color:"#82b92c",null:null,number:123,object:{a:"b",c:"d",e:"f"},string:"Hello World"},o=function(){return e.createElement("div",null,e.createElement(t.default,{data:c}))};(0,r.render)(e.createElement(o,null),document.querySelector("#app"));
 },{"antd/dist/antd.css":"pp0i","react":"1n8/","react-dom":"NKHc","../src":"+fUd"}]},{},["zo2T"], null)
-//# sourceMappingURL=react-json-tree/example.d9c30833.map
+//# sourceMappingURL=/react-json-tree/example.d9c30833.map
