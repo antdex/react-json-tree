@@ -1,0 +1,43 @@
+{
+  "name": "@antdex/react-json-tree",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "typing": "lib/index.d.ts",
+  "repository": "git@github.com:newraina/react-json-tree.git",
+  "author": "newraina <newraina@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel example/index.html --open",
+    "build:demo": "parcel build example/index.html",
+    "build": "NODE_ENV=production babel src --out-dir lib --extensions '.ts,.tsx'",
+    "prepublishOnly": "yarn build",
+    "deploy": "gh-pages -d dist",
+    "type-check": "tsc"
+  },
+  "peerDependencies": {
+    "antd": "3.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/lodash": "^4.14.116",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "antd": "^3.9.2",
+    "gh-pages": "^2.0.0",
+    "parcel-bundler": "^1.9.7",
+    "prettier": "^1.14.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "rollup": "^0.66.2",
+    "typescript": "^3.0.3",
+    "utility-types": "^2.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "styled-components": "^3.4.9"
+  }
+}
