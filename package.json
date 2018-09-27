@@ -5,6 +5,7 @@
   "typing": "lib/index.d.ts",
   "repository": "git@github.com:antdex/react-json-tree.git",
   "author": "newraina <newraina@users.noreply.github.com>",
+  "keywords": ["react", "component", "antd", "json view", "tree view"],
   "license": "MIT",
   "scripts": {
     "start": "parcel example/index.html --open",
