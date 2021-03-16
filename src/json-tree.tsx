@@ -16,8 +16,10 @@ function isPrimitive(value: any) {
 }
 
 function getTreeNode(key: string, value: any) {
+  const nodeKey = String(id++);
+
   if (isPrimitive(value)) {
-    return <TreeNode key={String(id++)} title={`${key}: ${value}`} />
+    return <TreeNode key={nodeKey} title={`${key}: ${value}`} />
   }
   if (isArray(value)) {
     const children = value.map((v, i) => getTreeNode(String(i), v))
@@ -27,7 +29,7 @@ function getTreeNode(key: string, value: any) {
         <TypeNode> [{value.length}]</TypeNode>
       </span>
     )
-    return <TreeNode title={title}>{children}</TreeNode>
+    return <TreeNode key={nodeKey} title={title}>{children}</TreeNode>
   }
   if (isPlainObject(value)) {
     const keys = Object.keys(value)
@@ -38,7 +40,7 @@ function getTreeNode(key: string, value: any) {
         <TypeNode> {`{${keys.length}}`}</TypeNode>
       </span>
     )
-    return <TreeNode title={title}>{children}</TreeNode>
+    return <TreeNode key={nodeKey} title={title}>{children}</TreeNode>
   }
 }
 
